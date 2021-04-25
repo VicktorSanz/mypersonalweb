@@ -1,0 +1,36 @@
+@import './vars.scss';
+ 
+ .about-area{
+    padding: 8rem 5rem;
+}
+
+.about-area .about-title h2 > span{
+    display: block;
+    font: normal bold 49px/ 60px $main-font;
+    letter-spacing: 21px;
+}
+
+.about-area .about-title .paragraph > p{
+    padding: .4rem 0;
+}
+
+
+/* if the viewport is equal to 340px or less than that */ 
+@media only screen and (max-width: 792px){
+     .about-area .about-title h2 > span{
+        font-size: 31px;
+        letter-spacing: 10px;
+    }
+  
+ .about-area .about-title p{
+        padding: 0%;
+    } 
+}
+
+
+/* if the viewport is equal to 1910px or less than that */ 
+@media only screen and (max-width: 1910px){
+     .about-area{
+        padding: 3% 4%;
+    }
+}

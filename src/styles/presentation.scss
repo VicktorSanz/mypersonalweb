@@ -1,0 +1,202 @@
+@import './vars.scss';
+
+
+@media only screen and (max-width:  992px){
+    .site-banner .site-title h3{
+        padding-top: 2rem !important;
+    }
+
+    .site-banner .banner-image > img{
+        padding: 1rem 0 !important;
+    }
+
+    .site-banner .site-title h1{
+        font-size: 2.5rem !important;
+    }
+}
+
+/* if the viewport is equal to 1910px or less than that */ 
+@media only screen and (max-width: 1910px){
+    .container{
+        max-width: 90%;
+    }
+}
+
+.typewriter{
+    color: $secondary-color;
+}
+
+.title-text{
+margin-bottom: 0;
+}
+
+
+.site-banner .container{
+    position: relative;
+}
+
+.site-banner .site-title h3{
+    padding-top: 35%;
+    font-weight: 500;
+}
+
+ .site-banner .site-title h3::after{
+    content: " ";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.site-banner .site-title h1{
+    font-size: 5rem;
+}
+
+ .site-banner .site-title h4{
+    font-size: 1.5rem;
+}
+
+.site-banner .banner-image > img{
+    padding: 7rem 0;
+    width: 90rem;
+}
+
+.title-text {
+    font-family: $main-font;
+    font: normal bold 50px/ 72px $main-font;
+}
+
+
+.circles{
+    position: revert;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -10;
+    padding: 0;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    animation: animate 25s linear infinite;
+    bottom:-15px;
+    filter: invert(12%) sepia(69%) saturate(6559%) hue-rotate(184deg) brightness(103%) contrast(103%);
+}
+
+.circles li:nth-child(1){
+    left: 23%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 1s;
+    animation-duration: 25s;
+    background: url('../images/file-code.svg') no-repeat;
+}
+
+
+.circles li:nth-child(2){
+    left: 5%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 1s;
+    animation-duration: 12s;
+    background: url('../images/code.svg') no-repeat;
+}
+
+.circles li:nth-child(3){
+    left: 68%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 1s;
+    animation-duration: 15s;
+    background: url('../images/terminal-solid.svg') no-repeat;
+}
+
+.circles li:nth-child(4){
+    left: 41%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 1s;
+    animation-duration: 18s;
+    background: url('../images/code.svg') no-repeat;
+}
+
+.circles li:nth-child(5){
+    left: 60%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 1s;
+    animation-duration: 18s;
+    background: url('../images/code-branch.svg') no-repeat;
+}
+
+.circles li:nth-child(6){
+    left: 77%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 1s;
+    animation-duration: 25s;
+    background: url('../images/code.svg') no-repeat;
+}
+
+.circles li:nth-child(7){
+    left: 32%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 1s;
+    animation-duration: 12s;
+    background: url('../images/terminal-solid.svg') no-repeat;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 1s;
+    animation-duration: 25s;
+    background: url('../images/file-code.svg') no-repeat;
+}
+
+.circles li:nth-child(9){
+    left: 14%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 1s;
+    animation-duration: 15s;
+    background: url('../images/code-branch.svg') no-repeat;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 1s;
+    animation-duration: 11s;
+    background: url('../images/terminal-solid.svg') no-repeat;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+
+

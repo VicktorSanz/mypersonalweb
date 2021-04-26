@@ -3,7 +3,7 @@
 
 @media only screen and (max-width:  992px){
     .site-banner .site-title h3{
-        padding-top: 2rem !important;
+        padding-top: 0 !important;
     }
 
     .site-banner .banner-image > img{
@@ -87,6 +87,7 @@ margin-bottom: 0;
     animation: animate 25s linear infinite;
     bottom:-15px;
     filter: invert(12%) sepia(69%) saturate(6559%) hue-rotate(184deg) brightness(103%) contrast(103%);
+    z-index: -10;
 }
 
 .circles li:nth-child(1){

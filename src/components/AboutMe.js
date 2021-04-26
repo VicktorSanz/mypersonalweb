@@ -1,11 +1,26 @@
 import { images } from '../constants'
+import { useIsMobileScreen } from '../utils/screen'
 import '../styles/aboutMe.scss';
 
 const AboutMe = (props) => {
+  const isMobile = useIsMobileScreen()
+
+  const aboutMeHederText = () => {
+    return (
+      <div className="about-title">
+        <h2 className="text-uppercase pt-5">
+          <span>Let me</span>
+          <span>introduce</span>
+          <span>myself</span>
+        </h2>
+      </div>
+    )
+  }
 
   const aboutImage = () => {
     return (
       <div className="col-lg-6 col-md-12">
+        {isMobile && aboutMeHederText()}
         <div className="about-image">
           <img src={images.AboutImage} alt="About me" className="img-fluid" />
         </div>
@@ -15,12 +30,8 @@ const AboutMe = (props) => {
 
   const aboutText = () => {
     return (
-      <div className="col-lg-6 col-md-12 about-title">
-        <h2 className="text-uppercase pt-5">
-          <span>Let me</span>
-          <span>introduce</span>
-          <span>myself</span>
-        </h2>
+      <div className="col-lg-6 col-md-12">
+        {!isMobile && aboutMeHederText()}
         <div className="paragraph py-4 w-75">
           <p className="para">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rerum iure obcaecati vel

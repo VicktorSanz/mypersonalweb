@@ -2,7 +2,8 @@ import {
   Presentation,
   AboutMe,
   TechArea,
-  Portafolio
+  Portfolio,
+  Footer
 } from '../components'
 import '../styles/home.scss';
 
@@ -12,7 +13,8 @@ const Home = (props) => {
       <Presentation />
       <AboutMe />
       <TechArea />
-      <Portafolio />
+      <Portfolio />
+      <Footer />
     </>
   );
 }

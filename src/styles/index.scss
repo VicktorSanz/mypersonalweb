@@ -11,9 +11,15 @@ body.dark-mode {
   color: #dfdfdf;
   transition: background-color 0.3s ease;
 
+
+  .header_area .main-menu .navbar .navbar-brand{
+    color: rgba(255,255,255,.5);
+}
+
   .site-banner .site-title h3::after {
     background:white;
 }
+
 
 .typewriter{
   color: $primary-color2;
@@ -21,6 +27,24 @@ body.dark-mode {
 
 .circles li{
 filter: invert(58%) sepia(89%) saturate(1853%) hue-rotate(150deg) brightness(106%) contrast(103%);
+}
+
+.project-area .button-group button{
+ color:$secondary-color ;
+}
+
+footer.footer-area{
+  padding: 5rem 0;
+  background: url('/images/footer-bg-dark.png') no-repeat;
+}
+
+footer.footer-area .social a > i{
+  color: white;
+}
+
+
+footer.footer-area .social a:hover > i{
+  color: $primary-color2;
 }
 
 }
@@ -71,4 +95,12 @@ filter: invert(58%) sepia(89%) saturate(1853%) hue-rotate(150deg) brightness(106
   box-shadow: $box-shadow;
 }
 
+p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 
+p.para{
+  color: $text-color;
+  font: normal 500 16px/ 25px $main-font;
+}

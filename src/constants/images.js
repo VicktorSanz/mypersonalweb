@@ -1,7 +1,23 @@
+import mainLogo from '../images/mainLogo.png'
+import mainLogo_header from '../images/mainLogo3.png'
+
 /*#BANNERS*/
 
 import coderBanner from '../images/banners/banner-image.png';
 import AboutImage from '../images/about-me.png';
+
+
+/*#Proyects*/
+
+import faLanging_img from '../images/portfolio/p1.jpg';
+import faWeb_img from '../images/portfolio/p2.jpg';
+import desafio_img from '../images/portfolio/p3.jpg';
+import tombola_img from '../images/portfolio/p4.jpg';
+import faApp_img from '../images/portfolio/p5.jpg';
+import farmavalueApp_img from '../images/portfolio/p6.jpg';
+import personalWeb_img from '../images/portfolio/p7.jpg';
+import delyveryApp_img from '../images/portfolio/p8.jpg';
+import photoGaleryApp_img from '../images/portfolio/p9.jpg';
 
 /*
 DEV TECHS
@@ -43,12 +59,22 @@ import mongo_db_logo from "../images/techs/mongoLogo.png"
 import aws_logo from "../images/techs/awsLogo.png"
 
 
-
-
 export default {
+    mainLogo,
+    mainLogo_header,
+
     coderBanner,
     AboutImage,
 
+    faLanging_img,
+    faWeb_img,
+    desafio_img,
+    tombola_img,
+    faApp_img,
+    farmavalueApp_img,
+    personalWeb_img,
+    delyveryApp_img,
+    photoGaleryApp_img,
 
     react_logo,
     redux_logo,
@@ -67,5 +93,5 @@ export default {
     node_js_logo,
     ruby_logo,
     mongo_db_logo,
-    aws_logo
+    aws_logo,
 }

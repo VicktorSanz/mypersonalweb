@@ -55,8 +55,8 @@ const Presentation = (props) => {
         </h4>
         <div className="site-buttons">
           <div className="d-flex flex-row flex-wrap">
-            <button type="button" className="button primary-button mr-4 text-uppercase">hire me</button>
-            <button type="button" className="button secondary-button text-uppercase">Get cv</button>
+            {/*<button type="button" className="button primary-button mr-4 text-uppercase">hire me</button>*/}
+            <button type="button" className="button secondary-button text-uppercase">Get my Cv</button>
           </div>
         </div>
       </div>
